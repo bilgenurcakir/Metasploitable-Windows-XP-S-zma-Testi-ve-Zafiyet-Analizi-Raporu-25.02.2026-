@@ -65,10 +65,3 @@ Proje kapsamında hazırlanan sibervatan_rapor.pdf dosyası şunları içermekte
 * Tüm adımların detaylı açıklamaları
 * Gerçekleştirilen işlemlerin ekran görüntüleri
 * Teknik analiz ve bulgular
-
-⸻
-
-⚠️ Not
-
-Bu çalışma yalnızca eğitim amaçlı ve kontrollü laboratuvar ortamında gerçekleştirilmiştir.
-Gerçek sistemlerde izinsiz uygulanması yasal suçtur.
