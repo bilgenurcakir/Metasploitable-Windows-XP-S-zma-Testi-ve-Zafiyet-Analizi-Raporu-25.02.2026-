@@ -1,29 +1,74 @@
-Penetration Testing Lab: Metasploitable & Windows XP
-Bu proje, kontrollü bir laboratuvar ortamında gerçekleştirilen uçtan uca sızma testi sürecini ve elde edilen bulguların raporlanmasını içermektedir. Çalışma kapsamında ağ keşfi, zafiyet tespiti, exploit kullanımı ve sistem üzerinde kalıcılık sağlama adımları uygulanmıştır.
 
-🛡️ Uygulanan Senaryolar
-1. Metasploitable (Linux) Sızma Testi
+🛡️ Penetration Testing Lab: Metasploitable & Windows XP
 
-Keşif: netdiscover ve nmap araçları ile servis ve port taraması.
+Bu proje, kontrollü bir laboratuvar ortamında gerçekleştirilen uçtan uca sızma testi sürecini ve elde edilen bulguların raporlanmasını içermektedir.
 
-İstismar: vsftpd 2.3.4 backdoor zafiyeti ve Samba usermap_script exploitleri ile root erişimi.
+Çalışma kapsamında aşağıdaki adımlar uygulanmıştır:
 
-Kalıcılık: Sistemde yetkili kullanıcı oluşturma ve Meterpreter oturumuna yükseltme.
+* Ağ keşfi (Reconnaissance)
+* Zafiyet tespiti (Vulnerability Analysis)
+* Exploit kullanımı (Exploitation)
+* Sistem üzerinde kalıcılık sağlama (Persistence)
 
-2. Windows XP (MS08-067) Sızma Testi
+⸻
 
-Zafiyet: Uzaktan kod yürütmeye izin veren NetAPI (MS08-067) açığının tetiklenmesi.
+📌 Senaryo 1: Metasploitable (Linux) Sızma Testi
 
-CTF/Post-Exploitation: Sistem üzerinde dosya sistemi araması yapılarak gizli bayrağın (flag) ele geçirilmesi.
+🔍 Keşif
+
+* netdiscover ve nmap kullanılarak hedef sistem tespit edildi
+* Açık portlar ve servisler analiz edildi
+
+💥 İstismar (Exploitation)
+
+* vsftpd 2.3.4 backdoor zafiyeti kullanıldı
+* Samba usermap_script exploit ile sistem ele geçirildi
+* Root erişimi sağlandı
+
+🔐 Kalıcılık (Persistence)
+
+* Sisteme yetkili kullanıcı eklendi
+* Meterpreter oturumu yükseltilerek erişim sürdürülebilir hale getirildi
+
+⸻
+
+📌 Senaryo 2: Windows XP (MS08-067) Sızma Testi
+
+⚠️ Zafiyet
+
+* MS08-067 (NetAPI) açığı kullanılarak uzaktan kod çalıştırıldı
+
+🏴 Post-Exploitation / CTF
+
+* Dosya sistemi tarandı
+* Gizli bayrak (flag) başarıyla ele geçirildi
+
+⸻
 
 🛠️ Kullanılan Araçlar
-İşletim Sistemi: Kali Linux
 
-Tarama/Keşif: Nmap, Netdiscover
+* İşletim Sistemi: Kali Linux
+* Tarama & Keşif:
+    * Nmap
+    * Netdiscover
+* Exploitation Framework:
+    * Metasploit (MSFConsole)
+* Payload:
+    * Meterpreter
 
-Exploitation Framework: Metasploit (MSFConsole)
+⸻
 
-Payloads: Meterpreter
+📄 Rapor
 
-📄 Rapor İçeriği
-Proje içerisinde yer alan sibervatan_rapor.pdf dosyası, tüm adımların ekran görüntülerini ve teknik açıklamalarını içeren detaylı bir dokümantasyondur.
+Proje kapsamında hazırlanan sibervatan_rapor.pdf dosyası şunları içermektedir:
+
+* Tüm adımların detaylı açıklamaları
+* Gerçekleştirilen işlemlerin ekran görüntüleri
+* Teknik analiz ve bulgular
+
+⸻
+
+⚠️ Not
+
+Bu çalışma yalnızca eğitim amaçlı ve kontrollü laboratuvar ortamında gerçekleştirilmiştir.
+Gerçek sistemlerde izinsiz uygulanması yasal suçtur.
